@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sjjs.newsadmin.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+
+    </fragment>
+
+    <navigation android:id="@+id/news_navigation"
+        app:startDestination="@id/nav_add_news">
+
+        <fragment
+            android:id="@+id/nav_add_news"
+            android:name="com.sjjs.newsadmin.fragments.AddNewsFragment"
+            android:label="Add News"
+            tools:layout="@layout/activity_add_news" >
+            <action
+                android:id="@+id/action_nav_add_news_to_newsContentFragment"
+                app:destination="@id/newsContentFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/newsContentFragment"
+            android:name="com.sjjs.newsadmin.NewsContentFragment"
+            android:label="fragment_news_content"
+            tools:layout="@layout/fragment_news_content" >
+            <action
+                android:id="@+id/action_newsContentFragment_to_newsOtherFragment"
+                app:destination="@id/newsOtherFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/newsOtherFragment"
+            android:name="com.sjjs.newsadmin.NewsOtherFragment"
+            android:label="fragment_news_other"
+            tools:layout="@layout/fragment_news_other" />
+
+    </navigation>
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.sjjs.newsadmin.AddCategoryFragment"
+        android:label="fragment_add_category"
+        tools:layout="@layout/fragment_add_category" />
+    <fragment
+        android:id="@+id/nav_banner"
+        android:name="com.sjjs.newsadmin.AddBannerFragment"
+        android:label="fragment_add_banner"
+        tools:layout="@layout/fragment_add_banner" />
+
+
+</navigation>

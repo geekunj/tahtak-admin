@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <!--<item
+        android:id="@+id/item_notify"
+        android:title="Notifications"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_notifications_white"
+        android:iconTint="@android:color/white"/>
+
+    <item
+        android:id="@+id/item_fav"
+        android:title="Favorites"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_favorite_white"
+        android:iconTint="@android:color/white"/>
+
+    <item
+        android:id="@+id/item_cart"
+        android:title="Cart"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_shopping_cart_white"
+        android:iconTint="@android:color/white"/>-->
+
+    <item
+        android:id="@+id/item_logout"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+
+</menu>

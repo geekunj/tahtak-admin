@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Home"
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_apps"
+        android:enabled="true"
+        app:showAsAction="always">
+
+    </item>
+
+    <item
+        android:title="Add News"
+        android:id="@+id/news_navigation"
+        android:icon="@drawable/ic_add"
+        android:enabled="true"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:title="Add Category"
+        android:id="@+id/nav_category"
+        android:icon="@drawable/ic_add"
+        android:enabled="true"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:title="Add Banner"
+        android:id="@+id/nav_banner"
+        android:icon="@drawable/ic_add"
+        android:enabled="true"
+        app:showAsAction="always">
+    </item>
+
+
+</menu>

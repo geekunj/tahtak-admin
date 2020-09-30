@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SplashActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            app:srcCompat="@drawable/ic_logo"
+            android:padding="8dp"
+            android:layout_gravity="center|bottom"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:textSize="28sp"
+            android:text="Welcome Admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:indeterminate="true"
+            android:indeterminateTint="#2B2B2B"
+            android:layout_marginTop="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

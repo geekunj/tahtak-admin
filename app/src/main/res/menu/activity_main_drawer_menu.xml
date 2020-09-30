@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/nav_myplaces_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:title="Notifications"
+            android:icon="@drawable/ic_notification_clean" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/nav_logout_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_support"
+            android:title="Support"
+            android:icon="@drawable/ic_support"/>
+
+    </group>
+
+</menu>
